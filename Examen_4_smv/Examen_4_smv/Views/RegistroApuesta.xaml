@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen_4_smv.Views.RegistroApuesta">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+
+            <Label Text="Registro de Apuestas" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="txtDocCliente" FontSize="Small" TextColor="Black" PlaceholderColor="Gray" Placeholder="Documento del cliente"></Entry>
+            <Entry x:Name="txtNombreCliente" FontSize="Small" TextColor="Black" PlaceholderColor="Gray" Placeholder="Nombre del cliente"></Entry>
+            <Entry x:Name="txtNombreEmpleado" FontSize="Small" TextColor="Black" PlaceholderColor="Gray" Placeholder="Nombre del empleado"></Entry>            
+            <Entry x:Name="txtValorApuesta" FontSize="Small" TextColor="Black" Keyboard="Numeric" PlaceholderColor="Gray" Placeholder="Valor de la apuesta"></Entry>
+            <Entry x:Name="txtMultiplicador" FontSize="Small" TextColor="Black" Keyboard="Numeric" PlaceholderColor="Gray"  Placeholder="Multiplicador"></Entry>
+
+            <Label Text="Fecha Creación:" x:Name="lbfecha" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+
+            
+
+
+
+            <Button Grid.Column="1" x:Name="btnGuardar" Text="Guardar Apuesta" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Navy" TextColor="White"  Clicked="btnGuardar_Clicked"></Button>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
